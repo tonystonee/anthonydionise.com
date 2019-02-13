@@ -21,7 +21,7 @@
         </v-layout>
       </div>
     </v-container>
-    <v-container :fluid="$vuetify.breakpoint.smAndDown" :class="{'px-0 pb-0': $vuetify.breakpoint.smAndDown}">
+    <v-container :fluid="breakpoint.smAndDown" :class="{'px-0 pb-0': breakpoint.smAndDown}">
       <v-layout class="grey darken-4 pa-5" row wrap>
         <h2 class="mb-3">
           CSE 498 - <span class="green--text text--darken-4">
@@ -55,10 +55,12 @@
 
 <script>
 import ProjectThumbnail from '@/components/ProjectThumbnail'
+import breakpoint from '@/mixins/breakpoint'
 export default {
   components: {
     ProjectThumbnail
   },
+  mixins: [breakpoint],
   data() {
     return {
       personal: [
