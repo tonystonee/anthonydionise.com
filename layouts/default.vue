@@ -53,6 +53,7 @@
       <nuxt />
     </v-content>
     <v-footer
+      class="px-3"
       app
     >
       <span>&copy; 2019</span>
