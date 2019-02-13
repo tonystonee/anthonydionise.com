@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <navbar/>
-    <v-content class="black">
-
+    <v-content class="content">
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
@@ -22,3 +22,18 @@ export default {
   },
 };
 </script>
+
+<style lang="stylus">
+
+a{
+  color: white;
+  text-decoration: none;
+  &:visited{
+    color:white;
+  }
+}
+  .content{
+    font-family: 'Rubik', sans-serif;
+    background: #373737;
+  }
+</style>
