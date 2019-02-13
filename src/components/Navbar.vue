@@ -8,7 +8,7 @@
               </v-avatar>
               <p class="white--text subheading mt-1 mb-0">Anthony Dionise</p>
               <div class="white--text caption my-0">Web Developer Extraordinaire</div>
-          </v-flex>
+          </v-flex> 
         </v-layout>
         <v-list>
         <v-list-tile v-for="link in links" :key="link.text" router :to="link.route">
@@ -32,7 +32,7 @@ export default {
       links: [
         { icon: 'dashboard', text: 'Dashboard', route: '/' },
         { icon: 'folder', text: 'My Projects', route: '/projects' },
-        { icon: 'person', text: 'Team', route: '/team' },
+        { icon: 'person', text: 'Github Contributions', route: '/github' },
       ],
       snackbar: false,
     };

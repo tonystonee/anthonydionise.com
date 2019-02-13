@@ -13,26 +13,10 @@
           My story as simple. I started making simple websites
           as a young man hoping to make a little money. Pretty quickly after starting that, I decided to
           learn HTML & CSS, wanting more control over the design of my pages. I then decided to learn Javascript/jQuery
-          to make my pages more dynamic, where I immediately got hooked and got addicted to contrinuously progressing.
-        </div>
-        <div class="title white--text my-5">
-          My favorite language is Javascript. Here are some of my favorite technologies:
+          to make my pages more dynamic, where I immediately got hooked and got addicted to continuously progressing.
         </div>
       </v-flex>
     </v-layout>
-    <v-layout>
-      <v-flex>
-        <img alt="Vue logo" src="../assets/logo.png">
-      </v-flex>
-    </v-layout>
+
   </div>
 </template>
-
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-
-@Component({
-
-})
-export default class Home extends Vue {}
-</script>
