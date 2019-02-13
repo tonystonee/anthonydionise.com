@@ -50,9 +50,7 @@
       <v-toolbar-title v-text="title" />
     </v-toolbar>
     <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-content>
     <v-footer
       app
@@ -88,3 +86,10 @@ export default {
   }
 }
 </script>
+
+<style>
+a {
+  text-decoration: none;
+  color: white;
+}
+</style>
