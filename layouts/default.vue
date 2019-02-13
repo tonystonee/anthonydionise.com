@@ -7,6 +7,11 @@
       fixed
       app
     >
+      <div class="py-3 text-md-center">
+        <v-avatar :size="miniVariant ? 50 : 150">
+          <img class="text-lg-center" src="/img/anthony.jpg">
+        </v-avatar>
+      </div>
       <v-list>
         <v-list-tile
           v-for="(item, i) in items"
@@ -109,7 +114,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Anthony Dionise'
     }
   }
 }
