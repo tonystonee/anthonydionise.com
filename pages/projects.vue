@@ -81,6 +81,9 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    console.log(this.$vuetify.breakpoint.smAndDown)
   }
 }
 </script>
