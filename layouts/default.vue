@@ -28,6 +28,11 @@
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
+      <div class="text-xs-center">
+        <a target="__blank" href="https://github.com/tonystonee">
+          <v-icon>fab fa-github</v-icon>
+        </a>
+      </div>
     </v-navigation-drawer>
     <v-toolbar
       :clipped-left="clipped"
@@ -48,6 +53,10 @@
         <v-icon>web</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
+      <v-spacer />
+      <a target="__blank" href="https://github.com/tonystonee">
+        <v-icon>fab fa-github</v-icon>
+      </a>
     </v-toolbar>
     <v-content>
       <nuxt />
@@ -88,7 +97,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
 a {
   text-decoration: none;
   color: white;
