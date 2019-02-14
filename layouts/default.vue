@@ -83,6 +83,11 @@ export default {
           to: '/'
         },
         {
+          icon: 'book',
+          title: 'My Story',
+          to: '/about'
+        },
+        {
           icon: 'folder',
           title: 'Projects',
           to: '/projects'
