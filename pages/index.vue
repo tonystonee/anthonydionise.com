@@ -61,15 +61,17 @@
           </v-card-actions>
         </v-card>
       </v-flex>
+      <ExperiencePanel class="my-5" />
     </v-layout>
   </v-container>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
-
+import ExperiencePanel from '@/components/ExperiencePanel'
 export default {
   components: {
+    ExperiencePanel,
     Logo
   }
 }

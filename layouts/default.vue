@@ -75,7 +75,7 @@ export default {
   data() {
     return {
       clipped: false,
-      drawer: true,
+      drawer: false,
       items: [
         {
           icon: 'apps',
@@ -96,6 +96,11 @@ export default {
           icon: 'build',
           title: 'Github Contributions',
           to: '/contributions'
+        },
+        {
+          icon: 'work',
+          title: 'Professional Experience',
+          to: '/experience'
         }
       ],
       miniVariant: false,
