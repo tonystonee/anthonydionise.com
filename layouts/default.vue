@@ -29,8 +29,8 @@
         </v-list-tile>
       </v-list>
       <div class="text-xs-center">
-        <a target="__blank" href="https://github.com/tonystonee">
-          <v-icon>fab fa-github</v-icon>
+        <a v-for="s in social" :key="s.link" class="px-2" target="__blank" :href="s.link">
+          <v-icon>{{ s.icon }}</v-icon>
         </a>
       </div>
     </v-navigation-drawer>
@@ -46,16 +46,10 @@
       >
         <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>web</v-icon>
-      </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <a target="__blank" href="https://github.com/tonystonee">
-        <v-icon>fab fa-github</v-icon>
+      <a v-for="s in social" :key="s.link" class="px-2" target="__blank" :href="s.link">
+        <v-icon>{{ s.icon }}</v-icon>
       </a>
     </v-toolbar>
     <v-content>
@@ -101,6 +95,16 @@ export default {
           icon: 'work',
           title: 'Professional Experience',
           to: '/experience'
+        }
+      ],
+      social: [
+        {
+          icon: 'fab fa-github',
+          link: 'https://github.com/tonystonee'
+        },
+        {
+          icon: 'fab fa-linkedin in',
+          link: 'https://www.linkedin.com/in/anthony-dionise-292b8790/'
         }
       ],
       miniVariant: false,
