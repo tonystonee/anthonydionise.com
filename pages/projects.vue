@@ -69,7 +69,7 @@ export default {
           text: 'DayOneBros.com',
           link: 'https://dayonebros.com',
           desc:
-            'A web app that brings you the top ten videos of the day, overall and in multiple diffrent categories.'
+            'DayOneBros is a webapp designed to provide you the top ten videos of the day. Browse the site to see the top ten videos in multiple differnt catefories. Each page also comes with a RANDOM button, fetching a random video in the given category. <br><br>This app uses the YouTubeAPI and is built with VueJS 2, Vuetify, Vuex, Vue Router. Hosted on firebase. '
         }
       ],
       paid: [
@@ -77,13 +77,13 @@ export default {
           thumbnail: 'img/pura.png',
           text: 'Pura Organics',
           link: 'https://puraorganics.com',
-          desc: 'Skin care product line.'
+          desc:
+            "Pura Organics is a skin care product line. <br><br> Built with Shopify and Shopify's templating language liquid."
         }
       ]
     }
-  },
-  mounted() {
-    console.log(this.$vuetify.breakpoint.smAndDown)
   }
 }
 </script>
+<style>
+</style>
