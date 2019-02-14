@@ -7,7 +7,7 @@
       fixed
       app
     >
-      <div class="py-3 text-md-center">
+      <div class="py-3 text-xs-center">
         <v-avatar :size="miniVariant ? 50 : 150">
           <img class="text-lg-center" src="/img/anthony.jpg">
         </v-avatar>
