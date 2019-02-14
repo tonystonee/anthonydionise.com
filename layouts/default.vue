@@ -75,7 +75,7 @@ export default {
   data() {
     return {
       clipped: false,
-      drawer: false,
+      drawer: true,
       items: [
         {
           icon: 'apps',
@@ -86,11 +86,15 @@ export default {
           icon: 'folder',
           title: 'Projects',
           to: '/projects'
+        },
+        {
+          icon: 'build',
+          title: 'Github Contributions',
+          to: '/contributions'
         }
       ],
       miniVariant: false,
       right: true,
-      rightDrawer: false,
       title: 'Anthony Dionise'
     }
   }

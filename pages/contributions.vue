@@ -1,25 +1,67 @@
 <template>
-  <div />
+  <div>
+    <h2 class="px-4 pb-2">
+      Contributions
+    </h2>
+    <v-list class="mb-3">
+      <v-list-tile v-for="c in contributions" :key="c.name" target="__blank" :href="c.link">
+        {{ c.name }}
+      </v-list-tile>
+    </v-list>
+    <h2 class="px-4 pb-2">
+      Notable Forks
+    </h2>
+    <v-list v-if="forks" class="mb-3">
+      <v-list-tile v-for="f in forks" :key="f.name" target="__blank" :href="f.homepage">
+        {{ f.name }}
+      </v-list-tile>
+    </v-list>
+    <v-progress-circular
+      v-else
+      class="mx-5"
+      :size="70"
+      :width="7"
+      color="purple"
+      indeterminate
+    />
+  </div>
 </template>
 <script>
 import axios from 'axios'
 export default {
+  data() {
+    return {
+      forks: null,
+      contributions: [
+        {
+          name: 'DefinleyTyped',
+          link: 'https://github.com/DefinitelyTyped/DefinitelyTyped'
+        }
+      ]
+    }
+  },
   mounted() {
-    const endpoint = 'https://api.github.com'
-    const get = '/users/tonystonee/repos?type=fork'
-    const query = `${endpoint}${get}`
-    axios
-      .get(query)
-      .then(function(response) {
-        const forks = response.data.filter(repo => {
-          return repo.fork
+    this.$_getForks()
+  },
+  methods: {
+    $_getForks() {
+      const endpoint = 'https://api.github.com'
+      const get = '/users/tonystonee/repos?type=fork'
+      const query = `${endpoint}${get}`
+      const self = this
+      axios
+        .get(query)
+        .then(function(response) {
+          const forks = response.data.filter(repo => {
+            return repo.fork && repo.homepage
+          })
+          self.forks = forks
+          console.log(forks)
         })
-        console.log(response)
-        console.log(forks)
-      })
-      .catch(function(error) {
-        console.log(error)
-      })
+        .catch(function(error) {
+          console.log(error)
+        })
+    }
   }
 }
 </script>
