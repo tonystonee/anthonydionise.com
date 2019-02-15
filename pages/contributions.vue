@@ -36,6 +36,18 @@
 <script>
 import axios from 'axios'
 export default {
+  head() {
+    return {
+      title: `Anthony Dionise | Github Contributions`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "Anthony's Github Contributions and Noteable forks."
+        }
+      ]
+    }
+  },
   data() {
     return {
       forks: null,
@@ -56,18 +68,12 @@ export default {
       const get = '/users/tonystonee/repos?type=fork'
       const query = `${endpoint}${get}`
       const self = this
-      axios
-        .get(query)
-        .then(function(response) {
-          const forks = response.data.filter(repo => {
-            return repo.fork && repo.homepage
-          })
-          self.forks = forks
-          console.log(forks)
+      axios.get(query).then(function(response) {
+        const forks = response.data.filter(repo => {
+          return repo.fork && repo.homepage
         })
-        .catch(function(error) {
-          console.log(error)
-        })
+        self.forks = forks
+      })
     }
   }
 }

@@ -46,6 +46,18 @@ import Projects from '@/components/Projects'
 import PersonalProjects from '@/mixins/PersonalProjects'
 import breakpoint from '@/mixins/breakpoint'
 export default {
+  head() {
+    return {
+      title: `Anthony Dionise | Projects`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "Browse some of Anthony's public projects!"
+        }
+      ]
+    }
+  },
   components: {
     Projects
   },

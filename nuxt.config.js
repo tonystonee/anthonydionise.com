@@ -2,13 +2,13 @@ const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'static',
+  mode: 'universal',
 
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Anthony Dionise',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

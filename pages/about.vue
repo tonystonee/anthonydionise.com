@@ -132,6 +132,23 @@
     </v-layout>
   </v-container>
 </template>
+<script>
+export default {
+  name: 'About',
+  head() {
+    return {
+      title: `Anthony Dionise | About`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: "Learn more about Anthony's journey in web development!"
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <style lang="stylus">
 .about {
