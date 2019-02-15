@@ -19,7 +19,13 @@
         >
           {{ project.text }}
         </v-card-title>
-
+        <div class="pa-3">
+          <v-img
+            :src="project.thumbnail"
+            max-width="100%"
+          />
+        </div>
+        <v-divider />
         <v-card-text v-html="project.desc" />
 
         <v-divider />
