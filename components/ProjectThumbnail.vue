@@ -2,6 +2,7 @@
   <div class="projectLink">
     <v-dialog
       v-model="dialog"
+      class="projectDialog"
       width="500"
     >
       <v-btn
@@ -12,7 +13,7 @@
       >
         <v-icon>keyboard_arrow_right</v-icon>
       </v-btn>
-      <v-card>
+      <v-card class="projectDialog">
         <v-card-title
           class="headline purple"
           primary-title
@@ -26,7 +27,11 @@
           />
         </div>
         <v-divider />
-        <v-card-text v-html="project.desc" />
+        <v-card-text>
+          <p v-for="sentence in project.desc" :key="sentence">
+            {{ sentence }}
+          </p>
+        </v-card-text>
 
         <v-divider />
 
@@ -89,6 +94,7 @@ export default {
   }
 }
 </script>
+
 <style lang="stylus">
 .projectLink{
   position: relative;
