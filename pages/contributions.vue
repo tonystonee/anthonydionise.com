@@ -24,6 +24,13 @@
       color="purple"
       indeterminate
     />
+
+    <v-btn color="purple" target="__blank" href="https://github.com/tonystonee">
+      Find Me on Github!
+      <v-icon right>
+        fab fa-github
+      </v-icon>
+    </v-btn>
   </div>
 </template>
 <script>
