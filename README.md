@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # anthonydionise.com
 
 > Personal Website
@@ -20,3 +21,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+=======
+# anthonydionise.com
+>>>>>>> ecede25d221e085a3ad359c9120fce98813fef59
