@@ -3,9 +3,6 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
-  router: {
-    base: '/anthonydionise.com/'
-  },
   /*
   ** Headers of the page
   */
