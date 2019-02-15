@@ -40,7 +40,7 @@
       </v-card>
     </v-dialog>
     
-    <v-card hover @click="dialog=true">
+    <v-card hover @click="thumbnailAction">
       <v-img aspect-ratio="1.95568" :src="project.thumbnail" :alt="project.text" max-width="100%">
         <v-layout
           slot="placeholder"
@@ -70,6 +70,15 @@ export default {
   data() {
     return {
       dialog: false
+    }
+  },
+  methods: {
+    thumbnailAction() {
+      if (this.$route.name === 'projects') {
+        this.dialog = true
+      } else {
+        this.$router.push({ path: '/projects' })
+      }
     }
   }
 }

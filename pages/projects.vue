@@ -41,6 +41,9 @@
           <v-img max-width="100%" src="img/diagram.png" />
         </v-flex>
       </v-layout>
+      <v-btn to="/" class="mx-0 mt-2 py-4" color="purple">
+        Back Home
+      </v-btn>
     </v-container>
   </div>
 </template>

@@ -63,7 +63,7 @@
       </v-flex>
       <ExperiencePanel class="my-5" />
     </v-layout>
-    <PersonalProjects />
+    <PersonalProjects class="my-5" />
   </v-container>
 </template>
 
