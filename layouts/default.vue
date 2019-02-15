@@ -40,6 +40,9 @@
       app
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
+      <v-btn to="/" icon>
+        <v-icon>home</v-icon>
+      </v-btn>
       <v-btn
         icon
         @click.stop="miniVariant = !miniVariant"
