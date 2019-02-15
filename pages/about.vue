@@ -14,7 +14,7 @@
           <v-card-title class="headline">
             Hi. I'm Anthony.
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="card_content">
             <p>
               I am a fullstack web developer. My favorite language is <span class="red--text text--lighten-1">
                 Javascript.
@@ -113,14 +113,32 @@
               </a>.
             </p>
           </v-card-text>
+          <v-card-actions>
+            <v-spacer />
+            <v-btn
+              color="primary"
+              flat
+              nuxt
+              to="/"
+            >
+              Go Back Home
+              <v-icon right>
+                keyboard_arrow_right
+              </v-icon>
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
-<style>
-.about a {
-  text-decoration: underline;
+<style lang="stylus">
+.about {
+  .card_content{
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 </style>

@@ -63,15 +63,18 @@
       </v-flex>
       <ExperiencePanel class="my-5" />
     </v-layout>
+    <PersonalProjects />
   </v-container>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import ExperiencePanel from '@/components/ExperiencePanel'
+import PersonalProjects from '@/components/PersonalProjects'
 export default {
   components: {
     ExperiencePanel,
+    PersonalProjects,
     Logo
   }
 }

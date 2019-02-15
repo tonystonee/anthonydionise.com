@@ -2,15 +2,7 @@
   <div>
     <v-container>
       <div class="pa-5">
-        <h2 class="mb-3">
-          Personal Projects
-        </h2>
-        <v-layout row wrap>
-          <v-flex xs12 sm6 md4 class="pa-2">
-            <ProjectThumbnail v-for="p in personal" :key="p.text" :project="p" />
-          </v-flex>
-        </v-layout>
-
+        <PersonalProjects />
         <h2 class="mb-3">
           Paid Side Projects
         </h2>
@@ -55,10 +47,12 @@
 
 <script>
 import ProjectThumbnail from '@/components/ProjectThumbnail'
+import PersonalProjects from '@/components/PersonalProjects'
 import breakpoint from '@/mixins/breakpoint'
 export default {
   components: {
-    ProjectThumbnail
+    ProjectThumbnail,
+    PersonalProjects
   },
   mixins: [breakpoint],
   data() {

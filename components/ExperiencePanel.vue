@@ -20,14 +20,16 @@
           </v-layout>
         </div>
         <v-card>
-          <v-card-text>
-            <div>{{ item.desc }}</div>
-            <br>
-            <div>
-              <span v-if="item.stack" class="light-blue--text">
-                Stack:
-              </span> {{ item.stack }}
-            </div>
+          <v-card-text class="pa-2">
+            <v-alert value="true" color="grey darken-4">
+              <div>{{ item.desc }}</div>
+              <br>
+              <div>
+                <span v-if="item.stack" class="light-blue--text">
+                  Stack:
+                </span> {{ item.stack }}
+              </div>
+            </v-alert>
           </v-card-text>
         </v-card>
       </v-expansion-panel-content>
