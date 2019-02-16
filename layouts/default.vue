@@ -2,6 +2,7 @@
   <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
+      width="240"
       :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
@@ -24,7 +25,7 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
+            <v-list-tile-title class="body-2" v-text="item.title" />
           </v-list-tile-content>
         </v-list-tile>
       </v-list>

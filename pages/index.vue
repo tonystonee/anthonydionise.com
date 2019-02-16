@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="pa-5">
     <v-layout
       column
       justify-center

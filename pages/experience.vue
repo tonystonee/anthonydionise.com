@@ -1,5 +1,5 @@
 <template>
-  <v-container class="experience px-5">
+  <v-container class="experience pa-5">
     <ExperiencePanel />
   </v-container>
 </template>
