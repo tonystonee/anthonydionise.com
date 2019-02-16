@@ -42,7 +42,7 @@
       app
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-btn to="/" icon>
+      <v-btn :active-class="false" to="/" icon>
         <v-icon>home</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
