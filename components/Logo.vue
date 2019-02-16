@@ -48,7 +48,7 @@
   animation: goright 0.5s linear forwards 3.5s;
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
-  border-bottom: 120px solid #35495e;
+  border-bottom: 120px solid #e91e63;
 }
 
 .Triangle--four {

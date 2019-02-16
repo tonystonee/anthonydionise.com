@@ -10,10 +10,10 @@
       >
         <div slot="header">
           <v-layout wrap row>
-            <v-flex :xs12="breakpoint.xs">
+            <v-flex :xs12="breakpoint.smAndDown">
               {{ item.company }}
             </v-flex>
-            <v-spacer v-if="breakpoint.smAndUp" />
+            <v-spacer v-if="breakpoint.mdAndUp" />
             
             <div class="light-blue--text caption">
               {{ item.title }}
