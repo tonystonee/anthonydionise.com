@@ -47,7 +47,7 @@
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <a v-for="s in social" :key="s.link" class="px-2" target="__blank" :href="s.link">
-        <v-icon>{{ s.icon }}</v-icon>
+        <v-icon :color="s.color">{{ s.icon }}</v-icon>
       </a>
     </v-toolbar>
     <v-content>
@@ -98,11 +98,13 @@ export default {
       social: [
         {
           icon: 'fab fa-github',
-          link: 'https://github.com/tonystonee'
+          link: 'https://github.com/tonystonee',
+          color: 'purple'
         },
         {
           icon: 'fab fa-linkedin in',
-          link: 'https://www.linkedin.com/in/anthony-dionise-292b8790/'
+          link: 'https://www.linkedin.com/in/anthony-dionise-292b8790/',
+          color: 'blue'
         }
       ],
       miniVariant: false,
