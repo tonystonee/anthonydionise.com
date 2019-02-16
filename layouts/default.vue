@@ -37,6 +37,7 @@
     </v-navigation-drawer>
     <v-toolbar
       :clipped-left="clipped"
+      :flat="!clipped"
       fixed
       app
     >
@@ -66,8 +67,8 @@
 export default {
   data() {
     return {
-      clipped: false,
-      drawer: false,
+      clipped: true,
+      drawer: null,
       items: [
         {
           icon: 'apps',
