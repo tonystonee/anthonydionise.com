@@ -8,7 +8,7 @@
       <v-btn
         slot="activator"
         class="mx-0 px-0"
-        color="red"
+        color="pink"
         dark
       >
         <v-icon>keyboard_arrow_right</v-icon>
