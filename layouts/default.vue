@@ -44,12 +44,6 @@
       <v-btn to="/" icon>
         <v-icon>home</v-icon>
       </v-btn>
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <a v-for="s in social" :key="s.link" class="px-2" target="__blank" :href="s.link">

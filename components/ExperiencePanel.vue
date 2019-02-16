@@ -10,10 +10,11 @@
       >
         <div slot="header">
           <v-layout wrap row>
-            <div>
+            <v-flex :xs12="breakpoint.xs">
               {{ item.company }}
-            </div>
-            <v-spacer />
+            </v-flex>
+            <v-spacer v-if="breakpoint.smAndUp" />
+            
             <div class="light-blue--text caption">
               {{ item.title }}
             </div>
@@ -41,7 +42,9 @@
 </template>
 
 <script>
+import breakpoint from '@/mixins/breakpoint'
 export default {
+  mixins: [breakpoint],
   data() {
     return {
       items: [
