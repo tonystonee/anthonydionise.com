@@ -34,6 +34,8 @@
           <v-img max-width="100%" src="img/diagram.png" />
         </v-flex>
       </v-layout>
+    </v-container>
+    <v-container class="px-4 pb-5">
       <v-btn to="/" class="mx-0 mt-2 py-4" color="purple">
         Back Home
       </v-btn>

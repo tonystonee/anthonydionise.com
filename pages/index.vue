@@ -11,7 +11,7 @@
         md6
       >
         <div class="text-xs-center">
-          <logo />
+          <logo class="pb-5" />
         </div>
         <v-card>
           <v-card-title class="headline">
