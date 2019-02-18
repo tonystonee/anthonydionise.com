@@ -100,12 +100,12 @@ export default {
         {
           icon: 'fab fa-github',
           link: 'https://github.com/tonystonee',
-          color: 'purple'
+          color: 'purple lighten-2'
         },
         {
           icon: 'fab fa-linkedin in',
           link: 'https://www.linkedin.com/in/anthony-dionise-292b8790/',
-          color: 'blue'
+          color: 'blue lighten-1'
         }
       ],
       miniVariant: false,
